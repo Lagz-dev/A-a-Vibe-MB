@@ -60,6 +60,10 @@ nav {
     transition: all 0.3s ease;
 }
 
+html {
+     scroll-behavior: smooth;
+     }
+
 nav.scrolled {
     padding: 0.5rem 0;
     box-shadow: var(--shadow);
