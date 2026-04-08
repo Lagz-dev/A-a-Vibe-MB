@@ -1,23 +1,29 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Açaí Vibe Morro Branco - O melhor açaí de Morro Branco!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="./IMG/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./IMG/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo" >
-                    <img src="./IMG/logo.jpg" alt="Logo Açaí Vibe" style="border-radius: 50%; width: 80px; height: 80px;">
-                    Acaí Vibe Morro Branco
-                </div>
+            <div class="logo">
+                <img src="./IMG/logo.jpg" alt="Logo Açaí Vibe" style="border-radius: 50%; width: 80px; height: 80px;">
+                Acaí Vibe Morro Branco
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
@@ -52,7 +58,9 @@
     <section id="about" class="about fade-in">
         <h2 class="section-title">Sobre Nós</h2>
         <div class="about-content">
-            <p>Açaí Vibe Morro Branco é uma loja local de açaí que oferece tigelas deliciosas feitas com ingredientes de alta qualidade. Nosso objetivo é trazer felicidade para cada cliente com um açaí refrescante e saboroso. 💜</p>
+            <p>Açaí Vibe Morro Branco é uma loja local de açaí que oferece tigelas deliciosas feitas com ingredientes de
+                alta qualidade. Nosso objetivo é trazer felicidade para cada cliente com um açaí refrescante e saboroso.
+                💜</p>
         </div>
     </section>
 
@@ -103,7 +111,7 @@
         <h2 class="section-title">Siga no Instagram</h2>
         <p>Confira nossas novidades, promoções e as fotos mais gostosas do seu açaí favorito!</p>
         <a href="https://instagram.com/acaivibemb" class="instagram-link" target="_blank">
-                        <i class="fab fa-instagram"></i>
+            <i class="fab fa-instagram"></i>
             @acaivibemb
         </a>
     </section>
@@ -142,8 +150,8 @@
             </div>
         </div>
         <div style="text-align: center; margin-top: 3rem;">
-            <a href="https://wa.me/5585999615964?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20de%20açaí%20💜" 
-               class="btn btn-primary" style="font-size: 1.3rem; padding: 1.2rem 3rem;">
+            <a href="https://wa.me/5585999615964?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20de%20açaí%20💜"
+                class="btn btn-primary" style="font-size: 1.3rem; padding: 1.2rem 3rem;">
                 <i class="fab fa-whatsapp"></i> Pedir Agora
             </a>
         </div>
@@ -152,12 +160,12 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Açaí Vibe Morro Branco. Todos os direitos reservados. 💜</p>
-        <p>Morro Branco - CE | Feito com ❤️ para o melhor açaí!</p>
+        <p>Morro Branco - CE | Feito com ❤️ para o melhor açaí! Propriedade de Luiz Guilherme, proibida a reprodução.</p>
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/5585999615964?text=Olá!%20Vi%20o%20site%20e%20quero%20fazer%20um%20pedido%20💜" 
-       class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+    <a href="https://wa.me/5585999615964?text=Olá!%20Vi%20o%20site%20e%20quero%20fazer%20um%20pedido%20💜"
+        class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -207,7 +215,7 @@
 
         // WhatsApp button click animation
         document.querySelectorAll('.whatsapp-float, .btn-secondary').forEach(btn => {
-            btn.addEventListener('click', function(e) {
+            btn.addEventListener('click', function (e) {
                 // Pulse animation
                 this.style.transform = 'scale(0.95)';
                 setTimeout(() => {
@@ -218,10 +226,10 @@
 
         // Menu cards hover animation
         document.querySelectorAll('.menu-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
+            card.addEventListener('mouseenter', function () {
                 this.style.transform = 'translateY(-10px) scale(1.02)';
             });
-            card.addEventListener('mouseleave', function() {
+            card.addEventListener('mouseleave', function () {
                 this.style.transform = 'translateY(0) scale(1)';
             });
         });
@@ -229,7 +237,7 @@
         // Mobile menu toggle (basic implementation)
         const mobileMenu = document.querySelector('.mobile-menu');
         const navLinks = document.querySelector('.nav-links');
-        
+
         mobileMenu.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             const icon = mobileMenu.querySelector('i');
@@ -282,4 +290,5 @@
         });
     </script>
 </body>
+
 </html>

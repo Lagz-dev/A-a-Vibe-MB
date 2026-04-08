@@ -18,7 +18,7 @@
      align-items: center;
      gap: 15px;
      transition: transform 0.3s ease;
- }  
+ }
 
  /* Color Variables */
  :root {
@@ -29,6 +29,8 @@
      --light-bg: #F8F9FA;
      --shadow: 0 10px 30px rgba(106, 13, 173, 0.15);
  }
+
+
 
  /* Navigation */
  nav {
@@ -223,9 +225,24 @@
  /* Menu Section */
  .menu-grid {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     grid-template-columns: 1fr 1fr;
+     /* Força 2 colunas */
      gap: 2rem;
      margin-top: 3rem;
+     max-width: 700px;
+     /* Opcional: limita o container para manter 2 cards por linha */
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ /* Responsivo para telas pequenas */
+ @media (max-width: 768px) {
+     .menu-grid {
+         grid-template-columns: 1fr;
+         /* 1 card por linha no mobile */
+         max-width: 100%;
+         /* Ocupa a largura total */
+     }
  }
 
  .menu-card {
